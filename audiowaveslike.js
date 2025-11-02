@@ -1,0 +1,16 @@
+a.setBins(1)
+a.setCutoff(5)
+a.setSmooth(0.5)
+a.show()
+
+shape(3)
+.modulateRotate(noise(), 2)
+//.brightness(()=> a.fft[0]*0.1)
+//.color(-0.2,-11.2,2.9)
+.repeat(99)
+.scrollX(()=>a.fft[0]*0.001)
+.scrollY(()=>a.fft[0]*0.001)
+.modulate(osc(()=>a.fft[0]*50), 0.05)
+.out(o0)
+
+render(o0)
