@@ -1,4 +1,4 @@
-noise(2, ()=>0.00000001*mouse.y*mouse.x)
+noise(2, ()=>0.00000002*mouse.y*mouse.x)
   .color(-3, 18, 2)
   .colorama()
   .mult(
